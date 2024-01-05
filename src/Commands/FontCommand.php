@@ -1,0 +1,10 @@
+<?php
+
+namespace SmartDato\Zpl\Commands;
+
+class FontCommand extends Command
+{
+    protected static CommandString $cmdString = CommandString::FONT;
+    protected static bool $needsArgs = true;
+    protected static array $neededArgs = [false, false, false, false];
+}

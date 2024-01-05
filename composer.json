@@ -1,0 +1,39 @@
+{
+    "name": "smart-dato/zpl",
+    "description": "object-oriented ZPL command builder",
+    "authors": [
+        {
+            "name": "Smart Dato",
+            "email": "info@smart-dato.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmartDato\\Zpl\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SmartDato\\Zpl\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
