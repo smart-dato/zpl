@@ -1,13 +1,16 @@
 {
     "name": "smart-dato/zpl",
     "description": "object-oriented ZPL command builder",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Smart Dato",
-            "email": "info@smart-dato.com"
+            "role": "Developer",
+            "name": "SmartDato",
+            "email": "info@smart-dato.com",
+            "homepage": "https://smart-dato.com"
         }
     ],
-    "type": "library",
     "require": {
         "php": "^8.1"
     },
