@@ -28,7 +28,7 @@ trait HasFieldData
     public function hexEncoding(bool $enabled = true, ?string $indicator = null): static
     {
         if (! is_null($indicator) && strlen($indicator) !== 1) {
-            throw new InvalidHexIndicatorException();
+            throw new InvalidHexIndicatorException;
         }
 
         $this->hexadecimalEnabled = $enabled;

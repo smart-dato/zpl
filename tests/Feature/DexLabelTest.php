@@ -6,7 +6,7 @@ use SmartDato\Zpl\Enums\OrientationType;
 use SmartDato\Zpl\Label;
 
 it('dex label', function () {
-    $label = new Label();
+    $label = new Label;
     $label->setInternationalEncoding(InternationalEncoding::UTF8);
     $label->setDefaultOrientation(OrientationType::ROTATED);
 
