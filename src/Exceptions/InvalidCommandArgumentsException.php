@@ -2,6 +2,4 @@
 
 namespace SmartDato\Zpl\Exceptions;
 
-class InvalidCommandArgumentsException extends Exception
-{
-}
+class InvalidCommandArgumentsException extends Exception {}

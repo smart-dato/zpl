@@ -12,7 +12,7 @@ class StringHelper
         ?string $encoding = null
     ): string {
         if (strlen($hexIndicator) !== 1) {
-            throw new InvalidHexIndicatorException();
+            throw new InvalidHexIndicatorException;
         }
 
         $result = '';
