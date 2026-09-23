@@ -15,10 +15,10 @@
         "php": "^8.2|^8.5"
     },
     "require-dev": {
-        "pestphp/pest": "^3.0",
-        "orchestra/testbench": "^10.0.0||^9.0.0||^8.22.0",
         "laravel/pint": "^1.15",
-        "phpstan/phpstan": "^1.10"
+        "orchestra/testbench": "^10.0.0||^9.0.0||^8.22.0",
+        "pestphp/pest": "^3.0",
+        "phpstan/phpstan": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -40,11 +40,10 @@
         ],
         "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
-        "lint": [
-            "@php vendor/bin/phpstan analyse"
-        ]
+        "analyse": "vendor/bin/phpstan analyse"
     },
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
