@@ -40,4 +40,4 @@ test('enabling hexadecimal renders command correctly', function (?string $hexInd
     $expected = "^FO{$x},{$y}^FH{$hexIndicator}^FD{$data}^FS";
 
     expect($rendered)->toBe($expected);
-})->with([null, '_', 'X']);
+})->with([[null], ['_'], ['X']]);
